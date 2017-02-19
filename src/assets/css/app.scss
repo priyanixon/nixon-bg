@@ -3,6 +3,32 @@ body {
 	padding: 0;
 	background-color: pink;
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}body {
+  background: linear-gradient( 
+    45deg,
+    violet,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+
+  background-size: 1000%;
+
+  animation: move_bg 500s linear 0s infinite;
+}
+
+@keyframes move_bg {
+  from {background-position: 0}
+  to {background-position: 1000%}
+}
+
+#tile:hover {
+  background-size:550px 550px;
+  background-position:-50px -50px;
 }
 
 .nav {
